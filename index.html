@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- SEO & Meta Optimization -->
+    <title>
+      Slay.AI - AI Virtual Try-On Platform for Fashion Retailers | 30x ROI
+      Guaranteed
+    </title>
+    <meta
+      name="description"
+      content="Transform your fashion retail with Slay.AI's AI-powered virtual try-on platform. 35% higher conversions, 25% fewer returns. Trusted by India's leading fashion brands. Book demo today."
+    />
+    <meta
+      name="keywords"
+      content="AI fashion, virtual try-on, B2B retail technology, fashion tech India, retail analytics, conversion optimization, fashion AI platform"
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Slay.AI - AI Virtual Try-On Platform for Fashion Retailers"
+    />
+    <meta
+      property="og:description"
+      content="30x ROI with AI-powered virtual try-on technology. Trusted by India's leading fashion retailers."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://slay.ai" />
+    <meta property="og:image" content="https://slay.ai/assets/og-image.png" />
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Slay.AI",
+        "description": "AI-powered virtual try-on platform for fashion retailers",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "price": "75000",
+          "priceCurrency": "INR"
+        },
+        "provider": {
+          "@type": "Organization",
+          "name": "Slay.AI",
+          "url": "https://slay.ai",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN"
+          }
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Fashion Retailers"
+        }
+      }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23667eea'/%3E%3Cstop offset='100%25' stop-color='%23764ba2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='white' font-family='system-ui' font-size='16' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E"
+    />
+
+    <style>
+      /* CSS Variables - 2025 Premium Design System */
+      :root {
+        /* Premium Color Palette - Indian Fashion Market */
+        --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --accent-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        --premium-gold: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+
+        /* Neutral Palette */
+        --text-primary: #1a1a1a;
+        --text-secondary: #4a5568;
+        --text-muted: #718096;
+        --bg-primary: #ffffff;
+        --bg-secondary: #f7fafc;
+        --bg-tertiary: #edf2f7;
+
+        /* Glass Morphism */
+        --glass-bg: rgba(255, 255, 255, 0.25);
+        --glass-border: rgba(255, 255, 255, 0.18);
+        --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+        /* Shadows - Spatial Design */
+        --shadow-soft: 0 2px 10px rgba(0, 0, 0, 0.1);
+        --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.15);
+        --shadow-strong: 0 20px 40px rgba(0, 0, 0, 0.2);
+        --shadow-premium: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+        /* Typography Scale */
+        --font-primary: "Inter", system-ui, sans-serif;
+        --font-display: "Playfair Display", serif;
+
+        /* Spacing Scale */
+        --space-1: 0.25rem;
+        --space-2: 0.5rem;
+        --space-3: 0.75rem;
+        --space-4: 1rem;
+        --space-5: 1.25rem;
+        --space-6: 1.5rem;
+        --space-8: 2rem;
+        --space-10: 2.5rem;
+        --space-12: 3rem;
+        --space-16: 4rem;
+        --space-20: 5rem;
+        --space-24: 6rem;
+
+        /* Border Radius - Modern Skeuomorphism */
+        --radius-sm: 8px;
+        --radius-md: 12px;
+        --radius-lg: 16px;
+        --radius-xl: 20px;
+        --radius-2xl: 24px;
+        --radius-3xl: 32px;
+
+        /* Animation Timing */
+        --transition-fast: 0.15s ease-out;
+        --transition-medium: 0.3s ease-out;
+        --transition-slow: 0.5s ease-out;
+        --transition-bounce: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      /* Reset & Base Styles */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+
+      body {
+        font-family: var(--font-primary);
+        line-height: 1.6;
+        color: var(--text-primary);
+        background: var(--bg-primary);
+        overflow-x: hidden;
+      }
+
+      /* Typography - Big Typography Trend 2025 */
+      .text-hero {
+        font-size: clamp(3rem, 8vw, 6rem);
+        font-weight: 800;
+        line-height: 1.1;
+        font-family: var(--font-display);
+        letter-spacing: -0.02em;
+      }
+
+      .text-xl {
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+        font-weight: 700;
+        line-height: 1.2;
+        font-family: var(--font-display);
+      }
+
+      .text-lg {
+        font-size: clamp(1.25rem, 3vw, 1.75rem);
+        font-weight: 600;
+        line-height: 1.3;
+      }
+
+      .text-base {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6;
+      }
+
+      .text-sm {
+        font-size: 0.875rem;
+        font-weight: 500;
+        line-height: 1.4;
+      }
+
+      /* Container System */
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 var(--space-6);
+      }
+
+      .container-wide {
+        max-width: 1400px;
+      }
+
+      /* Bento Grid System - 2025 Trend */
+      .bento-grid {
+        display: grid;
+        gap: var(--space-6);
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+
+      .bento-card {
+        background: var(--bg-primary);
+        border-radius: var(--radius-xl);
+        padding: var(--space-8);
+        box-shadow: var(--shadow-medium);
+        transition: all var(--transition-medium);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+      .bento-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-premium);
+      }
+
+      .bento-card-large {
+        grid-column: span 2;
+      }
+
+      /* Glass Morphism Components */
+      .glass-card {
+        background: var(--glass-bg);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-radius: var(--radius-xl);
+        border: 1px solid var(--glass-border);
+        box-shadow: var(--glass-shadow);
+      }
+
+      /* Premium Button System */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-2);
+        padding: var(--space-4) var(--space-8);
+        border-radius: var(--radius-lg);
+        font-weight: 600;
+        font-size: 1rem;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: all var(--transition-medium);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left var(--transition-slow);
+      }
+
+      .btn:hover::before {
+        left: 100%;
+      }
+
+      .btn-primary {
+        background: var(--primary-gradient);
+        color: white;
+        box-shadow: var(--shadow-medium);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-strong);
+      }
+
+      .btn-secondary {
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        border: 2px solid var(--text-primary);
+      }
+
+      .btn-secondary:hover {
+        background: var(--text-primary);
+        color: var(--bg-primary);
+      }
+
+      .btn-accent {
+        background: var(--accent-gradient);
+        color: white;
+        box-shadow: var(--shadow-medium);
+      }
+
+      .btn-accent:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-strong);
+      }
+
+      /* Header */
+      .header {
+        position: sticky;
+        top: 0;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
+        z-index: 1000;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--space-4) 0;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: var(--text-primary);
+        text-decoration: none;
+        font-family: var(--font-display);
+      }
+
+      .logo-icon {
+        width: 140px;
+        height: 140px;
+        background: var(--primary-gradient);
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        background: url("./logo.png");
+        background-size: cover;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: var(--space-8);
+      }
+
+      .nav-link {
+        color: var(--text-secondary);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color var(--transition-fast);
+        position: relative;
+      }
+
+      .nav-link:hover {
+        color: var(--text-primary);
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--primary-gradient);
+        transition: width var(--transition-medium);
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      /* Hero Section with Video Integration */
+      .hero {
+        padding: var(--space-24) 0;
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e2e8f0" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+        opacity: 0.5;
+        z-index: 1;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-16);
+        align-items: center;
+      }
+
+      .hero-text {
+        max-width: 600px;
+      }
+
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-2);
+        padding: var(--space-2) var(--space-4);
+        background: var(--success-gradient);
+        color: white;
+        border-radius: var(--radius-2xl);
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: var(--space-6);
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      .hero-title {
+        margin-bottom: var(--space-6);
+        background: linear-gradient(
+          135deg,
+          #667eea 0%,
+          #764ba2 50%,
+          #f093fb 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-description {
+        font-size: 1.25rem;
+        color: var(--text-secondary);
+        margin-bottom: var(--space-8);
+        line-height: 1.6;
+      }
+
+      .hero-cta {
+        display: flex;
+        gap: var(--space-4);
+        flex-wrap: wrap;
+        margin-bottom: var(--space-8);
+      }
+
+      .hero-stats {
+        display: flex;
+        gap: var(--space-8);
+        flex-wrap: wrap;
+      }
+
+      .stat {
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--text-primary);
+        display: block;
+        font-family: var(--font-display);
+      }
+
+      .stat-label {
+        font-size: 0.875rem;
+        color: var(--text-muted);
+        font-weight: 500;
+      }
+
+      /* Video Container with 3D Effects */
+      .hero-video {
+        position: relative;
+        border-radius: var(--radius-2xl);
+        overflow: hidden;
+        box-shadow: var(--shadow-premium);
+        transform: perspective(1000px) rotateY(-5deg);
+        transition: transform var(--transition-slow);
+      }
+
+      .hero-video:hover {
+        transform: perspective(1000px) rotateY(0deg) scale(1.05);
+      }
+
+      .video-container {
+        width: 100%;
+        aspect-ratio: 16/9;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .play-overlay {
+        font-size: 3rem;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        padding-left: 0.3rem;
+        cursor: pointer;
+        user-select: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.1s ease; /* smooth fade */
+        opacity: 1; /* visible by default */
+      }
+
+      .play-overlay:hover {
+        opacity: 1;
+      }
+
+      .video-text {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 18px;
+        text-align: center;
+      }
+      .video-placeholder {
+        color: white;
+        text-align: center;
+      }
+
+      #playPauseBtn {
+        width: 80px;
+        height: 80px;
+        background: var(--primary-gradient);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 3rem;
+        cursor: pointer;
+        transition: all var(--transition-medium);
+        margin: 0 auto var(--space-4);
+      }
+
+      .play-button:hover {
+        transform: scale(1.1);
+        box-shadow: var(--shadow-strong);
+      }
+
+      .play-overlay,
+      .mute-overlay {
+        font-size: 2.5rem;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        cursor: pointer;
+        user-select: none;
+        position: absolute;
+        transition: opacity 0.2s ease;
+        opacity: 1;
+      }
+
+      /* Center Play Button */
+      .play-overlay {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      /* Bottom-right Mute Button */
+      .mute-overlay {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+        font-size: 1.8rem;
+      }
+
+      /* Benefits Section with Bento Grid */
+      .benefits {
+        padding: var(--space-24) 0;
+        background: var(--bg-primary);
+      }
+
+      .section-header {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto var(--space-16);
+      }
+
+      .section-title {
+        margin-bottom: var(--space-4);
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .section-description {
+        font-size: 1.125rem;
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+
+      .benefit-icon {
+        width: 60px;
+        height: 60px;
+        background: var(--primary-gradient);
+        border-radius: var(--radius-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem;
+        margin-bottom: var(--space-6);
+      }
+
+      .benefit-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: var(--space-3);
+        color: var(--text-primary);
+      }
+
+      .benefit-description {
+        color: var(--text-secondary);
+        line-height: 1.6;
+        margin-bottom: var(--space-4);
+      }
+
+      .benefit-metric {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-2);
+        background: var(--success-gradient);
+        color: white;
+        padding: var(--space-2) var(--space-4);
+        border-radius: var(--radius-2xl);
+        font-size: 0.875rem;
+        font-weight: 600;
+      }
+
+      /* ROI Calculator */
+      .roi-section {
+        padding: var(--space-24) 0;
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      }
+
+      .calculator-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: var(--bg-primary);
+        border-radius: var(--radius-2xl);
+        padding: var(--space-12);
+        box-shadow: var(--shadow-premium);
+      }
+
+      .calculator-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--space-6);
+        margin-bottom: var(--space-8);
+      }
+
+      .input-group {
+        position: relative;
+      }
+
+      .input-label {
+        display: block;
+        margin-bottom: var(--space-2);
+        font-weight: 600;
+        color: var(--text-primary);
+        font-size: 0.875rem;
+      }
+
+      .input-field {
+        width: 100%;
+        padding: var(--space-4);
+        border: 2px solid var(--bg-tertiary);
+        border-radius: var(--radius-md);
+        font-size: 1rem;
+        transition: all var(--transition-fast);
+        background: var(--bg-primary);
+      }
+
+      .input-field:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+      }
+
+      .calculator-result {
+        text-align: center;
+        padding: var(--space-8);
+        background: var(--premium-gold);
+        border-radius: var(--radius-xl);
+        margin-top: var(--space-8);
+      }
+
+      .result-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--text-primary);
+        margin-bottom: var(--space-2);
+        font-family: var(--font-display);
+      }
+
+      .result-subtitle {
+        color: var(--text-secondary);
+        margin-bottom: var(--space-6);
+      }
+
+      .result-breakdown {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: var(--space-6);
+      }
+
+      .result-item {
+        text-align: center;
+      }
+
+      .result-value {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        display: block;
+      }
+
+      .result-label {
+        font-size: 0.875rem;
+        color: var(--text-muted);
+        font-weight: 500;
+      }
+
+      /* Social Proof Section */
+      .social-proof {
+        padding: var(--space-24) 0;
+        background: var(--bg-primary);
+      }
+
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: var(--space-8);
+      }
+
+      .testimonial-card {
+        background: var(--bg-primary);
+        border-radius: var(--radius-xl);
+        padding: var(--space-8);
+        box-shadow: var(--shadow-medium);
+        border: 1px solid var(--bg-tertiary);
+        transition: all var(--transition-medium);
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-strong);
+      }
+
+      .testimonial-content {
+        margin-bottom: var(--space-6);
+        font-size: 1.125rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        font-style: italic;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: var(--space-4);
+      }
+
+      .author-avatar {
+        width: 50px;
+        height: 50px;
+        background: var(--primary-gradient);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+      }
+
+      .author-info h4 {
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: var(--space-1);
+      }
+
+      .author-info p {
+        color: var(--text-muted);
+        font-size: 0.875rem;
+      }
+
+      /* CTA Section */
+      .cta-section {
+        padding: var(--space-24) 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        text-align: center;
+      }
+
+      .cta-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .cta-title {
+        margin-bottom: var(--space-6);
+        color: white;
+      }
+
+      .cta-description {
+        font-size: 1.25rem;
+        margin-bottom: var(--space-8);
+        opacity: 0.9;
+      }
+
+      /* Contact Form */
+      .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        border-radius: var(--radius-2xl);
+        padding: var(--space-8);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-4);
+        margin-bottom: var(--space-6);
+      }
+
+      .contact-form .input-field {
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: var(--text-primary);
+      }
+
+      .contact-form .input-field::placeholder {
+        color: var(--text-muted);
+      }
+
+      .form-full {
+        grid-column: span 2;
+      }
+
+      .form-textarea {
+        width: 100%;
+        padding: var(--space-4);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: var(--radius-md);
+        background: rgba(255, 255, 255, 0.9);
+        color: var(--text-primary);
+        font-family: var(--font-primary);
+        resize: vertical;
+        min-height: 120px;
+        margin-top: 2rem;
+      }
+
+      .form-submit {
+        width: 100%;
+        background: white;
+        color: #667eea;
+        font-weight: 700;
+        margin-top: var(--space-4);
+      }
+
+      .form-submit:hover {
+        background: var(--bg-secondary);
+        transform: translateY(-2px);
+      }
+
+      /* Footer */
+      .footer {
+        padding: var(--space-8) 0;
+        background: var(--bg-secondary);
+        border-top: 1px solid var(--bg-tertiary);
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .footer-brand {
+        color: var(--text-secondary);
+        font-weight: 500;
+        text-align: center;
+      }
+
+      .footer-social {
+        display: flex;
+        gap: var(--space-4);
+      }
+
+      .social-link {
+        width: 60px;
+        height: 60px;
+        background: var(--bg-primary);
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-secondary);
+        text-decoration: none;
+        transition: all var(--transition-fast);
+        box-shadow: var(--shadow-soft);
+      }
+
+      .social-link:hover {
+        background: var(--primary-gradient);
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .hero-content {
+          grid-template-columns: 1fr;
+          gap: var(--space-8);
+          text-align: center;
+        }
+
+        .hero-video {
+          transform: none;
+          order: -1;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .bento-card-large {
+          grid-column: span 1;
+        }
+
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-content {
+          flex-direction: column;
+          gap: var(--space-4);
+        }
+
+        .hero-stats {
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 0 var(--space-4);
+        }
+
+        .hero {
+          padding: var(--space-16) 0;
+        }
+
+        .benefits,
+        .roi-section,
+        .social-proof,
+        .cta-section {
+          padding: var(--space-16) 0;
+        }
+      }
+
+      /* Micro-interactions and Animations */
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+      }
+
+      .animate-on-scroll.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Loading States */
+      .loading {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .loading::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        animation: loading 1.5s infinite;
+      }
+
+      @keyframes loading {
+        0% {
+          left: -100%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+
+      /* Progressive Blur Effect */
+      .blur-backdrop {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+
+      .blur-sm {
+        backdrop-filter: blur(4px);
+      }
+      .blur-md {
+        backdrop-filter: blur(8px);
+      }
+      .blur-lg {
+        backdrop-filter: blur(12px);
+      }
+      .blur-xl {
+        backdrop-filter: blur(16px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="#" class="logo">
+          <div class="logo-icon"></div>
+        </a>
+        <div class="nav-links">
+          <a href="#benefits" class="nav-link">Benefits</a>
+          <a href="#roi" class="nav-link">ROI Calculator</a>
+          <a href="#testimonials" class="nav-link">Success Stories</a>
+          <a href="#contact" class="btn btn-primary">Get Demo</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">⚡ 30x ROI Guaranteed</div>
+            <h1 class="hero-title text-hero">
+              Transform Fashion Retail with AI Virtual Try-On
+            </h1>
+            <p class="hero-description">
+              Boost conversions by 35% and reduce returns by 25% with our
+              inventory-smart AI platform. Trusted by India's leading fashion
+              brands.
+            </p>
+            <div class="hero-cta">
+              <a href="#contact" class="btn btn-primary">Book Free Demo</a>
+              <a href="#roi" class="btn btn-secondary">Calculate ROI</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number">35%</span>
+                <span class="stat-label">Higher Conversions</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">25%</span>
+                <span class="stat-label">Fewer Returns</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">30x</span>
+                <span class="stat-label">ROI Multiple</span>
+              </div>
+            </div>
+          </div>
+          <!-- *******************************************************************************************************************8 -->
+          <div class="hero-video">
+            <div class="video-container">
+              <video id="heroVideo" autoplay loop muted width="100%">
+                <source src="./video.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+
+              <!-- Centered Play Button -->
+              <div class="video-placeholder">
+                <div class="play-overlay" id="playPauseBtn">▶</div>
+              </div>
+
+              <!-- ******************************************muted button********************************************************8 -->
+              <!-- Mute Button -->
+              <div
+                id="muteBtn"
+                style="
+                  position: absolute;
+                  bottom: 20px;
+                  right: 20px;
+                  background: rgba(0, 0, 0, 0.5);
+                  border-radius: 50%;
+                  padding: 10px;
+                  cursor: pointer;
+                  font-size: 20px;
+                  color: white;
+                "
+              >
+                <i id="volumeIcon" class="fas fa-volume-mute"></i>
+              </div>
+
+              <!-- ******************************************muted button********************************************************8 -->
+            </div>
+          </div>
+
+          <script>
+            const video = document.getElementById("heroVideo");
+            const playBtn = document.getElementById("playPauseBtn");
+            const videoContainer = document.querySelector(".video-container");
+            const muteBtn = document.getElementById("muteBtn");
+            const iconOff = document.getElementById("iconOff");
+            const iconOn = document.getElementById("iconOn");
+
+            playBtn.style.opacity = "0";
+
+            playBtn.addEventListener("click", () => {
+              if (video.paused) {
+                video.play();
+                // pause icon
+                playBtn.style.opacity = "0";
+              } else {
+                video.pause();
+                playBtn.textContent = "▶"; // play icon
+                playBtn.style.opacity = "1"; // always visible when paused
+              }
+            });
+
+            muteBtn.addEventListener("click", () => {
+              video.muted = !video.muted;
+
+              if (video.muted) {
+                volumeIcon.classList.remove("fa-volume-up");
+                volumeIcon.classList.add("fa-volume-mute"); // 🔇
+              } else {
+                volumeIcon.classList.remove("fa-volume-mute");
+                volumeIcon.classList.add("fa-volume-up"); // 🔊
+              }
+            });
+          </script>
+
+          <!-- *******************************************************************************************************************8 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="section-title text-xl">
+            Why India's Leading Fashion Retailers Choose Slay.AI
+          </h2>
+          <p class="section-description">
+            Transform your fashion business with AI-powered virtual try-on
+            technology that delivers measurable results
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <div class="bento-card animate-on-scroll">
+            <div class="benefit-icon">🎯</div>
+            <h3 class="benefit-title">Inventory-Smart Recommendations</h3>
+            <p class="benefit-description">
+              Show customers only products available in-store. No
+              disappointment, maximum conversions with real-time inventory sync.
+            </p>
+            <div class="benefit-metric">⚡ 20% faster inventory turnover</div>
+          </div>
+
+          <div class="bento-card animate-on-scroll">
+            <div class="benefit-icon">📱</div>
+            <h3 class="benefit-title">Zero-Friction QR Experience</h3>
+            <p class="benefit-description">
+              Customers scan, try-on, and buy in under 30 seconds. No app
+              downloads, no complicated setup process.
+            </p>
+            <div class="benefit-metric">🚀 35% higher adoption vs apps</div>
+          </div>
+
+          <div class="bento-card bento-card-large animate-on-scroll">
+            <div class="benefit-icon">🤖</div>
+            <h3 class="benefit-title">Photorealistic AI Try-On</h3>
+            <p class="benefit-description">
+              State-of-the-art AI generates 1024x1024px images showing customers
+              wearing your actual products with 90% accuracy in under 6 seconds.
+            </p>
+            <div class="benefit-metric">💎 90%+ accuracy guarantee</div>
+          </div>
+
+          <div class="bento-card animate-on-scroll">
+            <div class="benefit-icon">📊</div>
+            <h3 class="benefit-title">Enterprise Analytics</h3>
+            <p class="benefit-description">
+              Real-time insights on popular items, conversion patterns, and
+              customer preferences across all store locations.
+            </p>
+            <div class="benefit-metric">📈 15% better buying decisions</div>
+          </div>
+
+          <div class="bento-card animate-on-scroll">
+            <div class="benefit-icon">🏪</div>
+            <h3 class="benefit-title">Multi-Store Management</h3>
+            <p class="benefit-description">
+              Consistent experience across all locations with centralized
+              operations and local customization capabilities.
+            </p>
+            <div class="benefit-metric">⚡ 40% less management overhead</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section class="roi-section" id="roi">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="section-title text-xl">Calculate Your ROI with Slay.AI</h2>
+          <p class="section-description">
+            See how much additional revenue you could generate with our AI
+            virtual try-on platform
+          </p>
+        </div>
+
+        <div class="calculator-container animate-on-scroll">
+          <div class="calculator-grid">
+            <div class="input-group">
+              <label class="input-label">Monthly Store Visitors</label>
+              <input
+                type="number"
+                class="input-field"
+                id="visitors"
+                value="30000"
+                min="1000"
+                placeholder="30,000"
+              />
+            </div>
+            <div class="input-group">
+              <label class="input-label">Current Conversion Rate (%)</label>
+              <input
+                type="number"
+                class="input-field"
+                id="conversion"
+                value="8"
+                min="1"
+                max="50"
+                step="0.1"
+                placeholder="8%"
+              />
+            </div>
+            <div class="input-group">
+              <label class="input-label">Average Order Value (₹)</label>
+              <input
+                type="number"
+                class="input-field"
+                id="aov"
+                value="3500"
+                min="500"
+                placeholder="₹3,500"
+              />
+            </div>
+            <div class="input-group">
+              <label class="input-label">Number of Stores</label>
+              <input
+                type="number"
+                class="input-field"
+                id="stores"
+                value="25"
+                min="1"
+                placeholder="25"
+              />
+            </div>
+          </div>
+
+          <div class="calculator-result">
+            <div class="result-title" id="roiResult">
+              ₹74.5L+ Monthly Increase
+            </div>
+            <p class="result-subtitle">
+              Additional revenue with 35% conversion boost & 40% AOV increase
+            </p>
+            <div class="result-breakdown">
+              <div class="result-item">
+                <span class="result-value" id="currentRevenue">₹63L</span>
+                <span class="result-label">Current Revenue</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value" id="newRevenue">₹140L</span>
+                <span class="result-label">New Revenue</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value" id="roiMultiple">30x</span>
+                <span class="result-label">ROI Multiple</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof" id="testimonials">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="section-title text-xl">
+            Trusted by India's Leading Fashion Brands
+          </h2>
+          <p class="section-description">
+            Join 50+ fashion retailers already transforming their business with
+            Slay.AI
+          </p>
+        </div>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card animate-on-scroll">
+            <p class="testimonial-content">
+              "Slay.AI increased our conversion rate by 32% in just 3 months.
+              The inventory-smart recommendations eliminated customer
+              disappointment and our returns dropped by 28%."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RK</div>
+              <div class="author-info">
+                <h4>Rajesh Kumar</h4>
+                <p>Digital Head, Premium Fashion Chain</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card animate-on-scroll">
+            <p class="testimonial-content">
+              "The QR code experience is brilliant. Customers love seeing
+              themselves in our outfits instantly. Our average order value
+              increased by 45% since implementation."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">PS</div>
+              <div class="author-info">
+                <h4>Priya Sharma</h4>
+                <p>Operations Manager, Multi-Brand Store</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card animate-on-scroll">
+            <p class="testimonial-content">
+              "Implementation was seamless and our staff adapted quickly. The
+              real-time analytics help us make smarter inventory decisions. ROI
+              exceeded our expectations."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AM</div>
+              <div class="author-info">
+                <h4>Amit Mehta</h4>
+                <p>CEO, Fashion Retail Group</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section with Contact Form -->
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title text-xl">
+            Ready to Transform Your Fashion Business?
+          </h2>
+          <p class="cta-description">
+            Join 50+ leading fashion retailers already boosting conversions with
+            Slay.AI. Book your personalized demo today.
+          </p>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-grid">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="input-field"
+                  name="firstName"
+                  placeholder="First Name*"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="input-field"
+                  name="lastName"
+                  placeholder="Last Name*"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="input-field"
+                  name="email"
+                  placeholder="Business Email*"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="input-field"
+                  name="company"
+                  placeholder="Company Name*"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-full">
+              <input
+                type="tel"
+                class="input-field"
+                name="phone"
+                placeholder="Phone Number (Optional)"
+              />
+            </div>
+            <div class="form-full">
+              <textarea
+                class="form-textarea"
+                name="message"
+                placeholder="Tell us about your business goals (Optional)"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn form-submit">
+              Book Free Demo
+            </button>
+            <p style="font-size: 0.875rem; opacity: 0.8; margin-top: 1rem">
+              ⚡ Setup in 48hrs • 30x ROI guaranteed • No long-term contracts
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-brand">
+            © 2025 Slay.AI - Transforming Fashion Retail with AI
+          </p>
+          <div class="footer-social">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/company/slay-ai/"
+              class="social-link"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin fa-2x"></i
+            ></a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://x.com/SlayAI_online"
+              class="social-link"
+              aria-label="Twitter"
+              ><i class="fa-brands fa-x-twitter fa-2x"></i
+            ></a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/slayai_online?igsh=MWc1ajE2d2cwMGt4ZA=="
+              class="social-link"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="mailto:slayaionline@gmail.com"
+              class="social-link"
+              aria-label="Mail"
+              ><i class="fa-solid fa-envelope fa-2x"></i
+            ></a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.youtube.com/@SlayAI.online"
+              class="social-link"
+              aria-label="Youtube"
+              ><i class="fa-brands fa-youtube fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics.js";
+      import {
+        getDatabase,
+        ref,
+        push,
+        set,
+      } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-database.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyAP8nt5Em7VvJVDZ3QO0ikJP2rhNgFwKCU",
+        authDomain: "slamai-30c4a.firebaseapp.com",
+        databaseURL: "https://slamai-30c4a-default-rtdb.firebaseio.com",
+        projectId: "slamai-30c4a",
+        storageBucket: "slamai-30c4a.firebasestorage.app",
+        messagingSenderId: "499322844254",
+        appId: "1:499322844254:web:01c76c15b7c480ae4570cf",
+        measurementId: "G-9J5K9W93F9",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const db = getDatabase(app);
+
+      // ✅ Hook into your existing form handler
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          const formData = new FormData(e.target);
+          const data = {};
+          formData.forEach((value, key) => {
+            data[key] = value;
+          });
+
+          try {
+            // Save to Realtime DB
+            const contactRef = ref(db, "contact_details"); // like /contact_details node
+            const newContactRef = push(contactRef);
+            await set(newContactRef, {
+              ...data,
+              createdAt: new Date().toISOString(),
+            });
+
+            alert("Demo scheduled successfully!");
+            e.target.reset();
+          } catch (err) {
+            console.error("Error saving form:", err);
+            alert("Something went wrong. Try again!");
+          }
+        });
+    </script>
+
+    <script>
+      // Modern JavaScript with ES6+ features
+
+      class SlayAIWebsite {
+        constructor() {
+          this.initializeAnimations();
+          this.initializeROICalculator();
+          this.initializeContactForm();
+          this.initializeSmoothScrolling();
+        }
+
+        // Scroll animations
+        initializeAnimations() {
+          const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "50px",
+          };
+
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+              } else {
+                entry.target.classList.remove("animate");
+              }
+            });
+          }, observerOptions);
+
+          document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+            observer.observe(el);
+          });
+        }
+
+        // ROI Calculator functionality
+        initializeROICalculator() {
+          const inputs = ["visitors", "conversion", "aov", "stores"];
+
+          inputs.forEach((inputId) => {
+            const input = document.getElementById(inputId);
+            if (input) {
+              input.addEventListener("input", () => this.calculateROI());
+            }
+          });
+
+          // Initial calculation
+          this.calculateROI();
+        }
+
+        calculateROI() {
+          const visitors =
+            parseInt(document.getElementById("visitors")?.value) || 30000;
+          const conversion =
+            parseFloat(document.getElementById("conversion")?.value) || 8;
+          const aov = parseInt(document.getElementById("aov")?.value) || 3500;
+          const stores =
+            parseInt(document.getElementById("stores")?.value) || 25;
+
+          // Current revenue calculation
+          const currentConversions = (visitors * conversion) / 100;
+          const currentRevenue = currentConversions * aov;
+          const totalCurrentRevenue = currentRevenue * stores;
+
+          // With Slay.AI (35% conversion increase + 40% AOV increase)
+          const newConversion = conversion * 1.35;
+          const newAOV = aov * 1.4;
+          const newConversions = (visitors * newConversion) / 100;
+          const newRevenue = newConversions * newAOV;
+          const totalNewRevenue = newRevenue * stores;
+
+          // ROI calculations
+          const revenueIncrease = totalNewRevenue - totalCurrentRevenue;
+          const slayAICost = stores * 250000; // ₹2.5L per store per month
+          const netBenefit = revenueIncrease - slayAICost;
+          const roiMultiple = Math.round(netBenefit / slayAICost);
+
+          // Update display
+          this.updateROIDisplay(
+            totalCurrentRevenue,
+            totalNewRevenue,
+            netBenefit,
+            roiMultiple
+          );
+        }
+
+        updateROIDisplay(currentRevenue, newRevenue, netBenefit, roiMultiple) {
+          const formatCurrency = (amount) => {
+            if (amount >= 10000000) {
+              return `₹${(amount / 10000000).toFixed(1)}Cr`;
+            } else if (amount >= 100000) {
+              return `₹${(amount / 100000).toFixed(1)}L`;
+            } else {
+              return `₹${amount.toLocaleString("en-IN")}`;
+            }
+          };
+
+          const roiResultEl = document.getElementById("roiResult");
+          const currentRevenueEl = document.getElementById("currentRevenue");
+          const newRevenueEl = document.getElementById("newRevenue");
+          const roiMultipleEl = document.getElementById("roiMultiple");
+
+          if (roiResultEl)
+            roiResultEl.textContent = `${formatCurrency(
+              netBenefit
+            )}+ Monthly Increase`;
+          if (currentRevenueEl)
+            currentRevenueEl.textContent = formatCurrency(currentRevenue);
+          if (newRevenueEl)
+            newRevenueEl.textContent = formatCurrency(newRevenue);
+          if (roiMultipleEl) roiMultipleEl.textContent = `${roiMultiple}x`;
+        }
+
+        async submitContactForm(formData) {
+          // Replace with actual API endpoint
+          return new Promise((resolve, reject) => {
+            setTimeout(() => {
+              Math.random() > 0.1
+                ? resolve()
+                : reject(new Error("Simulated error"));
+            }, 2000);
+          });
+        }
+
+        showSuccessMessage() {
+          const message = document.createElement("div");
+          message.innerHTML = `
+                    <div style="position: fixed; top: 20px; right: 20px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 1rem 1.5rem; border-radius: 12px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); z-index: 10000; animation: slideIn 0.3s ease;">
+                        <strong>Demo Scheduled!</strong><br>
+                        We'll contact you within 24 hours.
+                    </div>
+                `;
+          document.body.appendChild(message);
+
+          setTimeout(() => {
+            message.remove();
+          }, 5000);
+        }
+
+        showErrorMessage(text) {
+          const message = document.createElement("div");
+          message.innerHTML = `
+                    <div style="position: fixed; top: 20px; right: 20px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 1rem 1.5rem; border-radius: 12px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); z-index: 10000; animation: slideIn 0.3s ease;">
+                        <strong>Error:</strong> ${text}
+                    </div>
+                `;
+          document.body.appendChild(message);
+
+          setTimeout(() => {
+            message.remove();
+          }, 5000);
+        }
+
+        // Smooth scrolling for navigation links
+        initializeSmoothScrolling() {
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", (e) => {
+              e.preventDefault();
+              const target = document.querySelector(
+                anchor.getAttribute("href")
+              );
+              if (target) {
+                target.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }
+            });
+          });
+        }
+      }
+
+      // Initialize the website when DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        new SlayAIWebsite();
+      });
+
+      // Performance monitoring
+      window.addEventListener("load", () => {
+        const loadTime = performance.now();
+        console.log(`Page loaded in ${Math.round(loadTime)}ms`);
+
+        // Track to analytics if available
+        if (typeof gtag !== "undefined") {
+          gtag("event", "timing_complete", {
+            name: "page_load",
+            value: Math.round(loadTime),
+          });
+        }
+      });
+
+      // Add CSS animation styles
+      const style = document.createElement("style");
+      style.textContent = `
+            @keyframes slideIn {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+        `;
+      document.head.appendChild(style);
+    </script>
+  </body>
+</html>
