@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -89,12 +90,7 @@
     />
 
     <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="./logo.png"
-      
-    />
+    <link rel="icon" type="image/svg+xml" href="./logo.png" />
 
     <style>
       /* CSS Variables - 2025 Premium Design System */
@@ -1152,7 +1148,7 @@
                   position: absolute;
                   bottom: 20px;
                   right: 20px;
-                  background: rgba(0, 0, 0, 0.5);
+                  /* background: rgba(0, 0, 0, 0.5); */
                   border-radius: 50%;
                   padding: 5px;
                   cursor: pointer;
@@ -1201,6 +1197,25 @@
                 volumeIcon.classList.add("fa-volume-up"); // 🔊
               }
             });
+
+            // ✅ Auto-pause when video leaves viewport
+            const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    video.play();
+                    playBtn.style.opacity = "0"; // hide play icon
+                  } else {
+                    video.pause();
+                    playBtn.textContent = "▶";
+                    playBtn.style.opacity = "1"; // show play icon
+                  }
+                });
+              },
+              { threshold: 0.25 } // trigger when 25% visible
+            );
+
+            observer.observe(video);
           </script>
 
           <!-- *******************************************************************************************************************8 -->
@@ -1635,7 +1650,6 @@
         constructor() {
           this.initializeAnimations();
           this.initializeROICalculator();
-          this.initializeContactForm();
           this.initializeSmoothScrolling();
         }
 
