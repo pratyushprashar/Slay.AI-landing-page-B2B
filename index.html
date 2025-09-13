@@ -1161,7 +1161,7 @@
 
             playBtn.style.opacity = "0";
 
-            playBtn.addEventListener("click", () => {
+            videoContainer.addEventListener("click", () => {
               if (video.paused) {
                 video.play();
                 // pause icon
@@ -1358,54 +1358,43 @@
           </p>
         </div>
 
-        <div class="testimonial-grid">
-          <div class="testimonial-card animate-on-scroll">
-            <p class="testimonial-content">
-              "Slay.AI increased our conversion rate by 32% in just 3 months.
-              The inventory-smart recommendations eliminated customer
-              disappointment and our returns dropped by 28%."
-            </p>
-            <div class="testimonial-author">
-              <div class="author-avatar">RK</div>
-              <div class="author-info">
-                <h4>Rajesh Kumar</h4>
-                <p>Digital Head, Premium Fashion Chain</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card animate-on-scroll">
-            <p class="testimonial-content">
-              "The QR code experience is brilliant. Customers love seeing
-              themselves in our outfits instantly. Our average order value
-              increased by 45% since implementation."
-            </p>
-            <div class="testimonial-author">
-              <div class="author-avatar">PS</div>
-              <div class="author-info">
-                <h4>Priya Sharma</h4>
-                <p>Operations Manager, Multi-Brand Store</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card animate-on-scroll">
-            <p class="testimonial-content">
-              "Implementation was seamless and our staff adapted quickly. The
-              real-time analytics help us make smarter inventory decisions. ROI
-              exceeded our expectations."
-            </p>
-            <div class="testimonial-author">
-              <div class="author-avatar">AM</div>
-              <div class="author-info">
-                <h4>Amit Mehta</h4>
-                <p>CEO, Fashion Retail Group</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Single Testimonial Card -->
+        <div class="testimonial-grid" id="testimonialGrid"></div>
       </div>
     </section>
+
+    <!-- <script type="module">
+      import { db } from "./firebase-setup.js"; // 👈 your setup file
+      import {
+        ref,
+        onValue,
+      } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+      const testimonialRef = ref(db, "testimonials");
+      const grid = document.getElementById("testimonialGrid");
+
+      onValue(testimonialRef, (snapshot) => {
+        grid.innerHTML = "";
+        const data = snapshot.val();
+        if (data) {
+          Object.values(data).forEach((t) => {
+            const card = document.createElement("div");
+            card.className = "testimonial-card animate-on-scroll";
+            card.innerHTML = `
+          <p class="testimonial-content">"${t.content}"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">${t.avatar}</div>
+            <div class="author-info">
+              <h4>${t.name}</h4>
+              <p>${t.role}</p>
+            </div>
+          </div>
+        `;
+            grid.appendChild(card);
+          });
+        }
+      });
+    </script> -->
 
     <!-- CTA Section with Contact Form -->
     <section class="cta-section" id="contact">
@@ -1544,6 +1533,7 @@
         getDatabase,
         ref,
         push,
+        onValue,
         set,
       } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-database.js";
 
@@ -1591,6 +1581,34 @@
             alert("Something went wrong. Try again!");
           }
         });
+
+      ////testimonials
+      const testimonialRef = ref(db, "testimonials");
+      const grid = document.getElementById("testimonialGrid");
+
+      onValue(testimonialRef, (snapshot) => {
+        grid.innerHTML = "";
+        const data = snapshot.val();
+        if (data) {
+          Object.values(data).forEach((t) => {
+            const card = document.createElement("div");
+            card.className = "testimonial-card";
+            card.innerHTML = `
+          <p class="testimonial-content">"${t.content}"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">${t.avatar || "?"}</div>
+            <div class="author-info">
+              <h4>${t.name}</h4>
+              <p>${t.role}</p>
+            </div>
+          </div>
+        `;
+            grid.appendChild(card);
+          });
+        } else {
+          grid.innerHTML = "<p>No testimonials yet.</p>";
+        }
+      });
     </script>
 
     <script>

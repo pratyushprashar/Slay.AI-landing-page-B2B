@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Testimonial</title>
+</head>
+<body>
+  <section>
+    <h3>Add a Testimonial</h3>
+    <form id="testimonialForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="text" name="role" placeholder="Your Role (e.g. CEO, Designer)" required />
+      <input type="text" name="avatar" placeholder="Avatar URL (optional)" />
+      <textarea name="content" placeholder="Write your testimonial..." required></textarea>
+      <button type="submit">Submit Testimonial</button>
+    </form>
+  </section>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+    import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-database.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAP8nt5Em7VvJVDZ3QO0ikJP2rhNgFwKCU",
+      authDomain: "slamai-30c4a.firebaseapp.com",
+      databaseURL: "https://slamai-30c4a-default-rtdb.firebaseio.com",
+      projectId: "slamai-30c4a",
+      storageBucket: "slamai-30c4a.firebasestorage.app",
+      messagingSenderId: "499322844254",
+      appId: "1:499322844254:web:01c76c15b7c480ae4570cf",
+      measurementId: "G-9J5K9W93F9"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    document.getElementById("testimonialForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const testimonial = {};
+      formData.forEach((value, key) => testimonial[key] = value);
+
+      try {
+        const testimonialRef = ref(db, "testimonials");
+        const newRef = push(testimonialRef);
+        await set(newRef, {
+          ...testimonial,
+          createdAt: new Date().toISOString()
+        });
+        alert("Testimonial submitted successfully!");
+        e.target.reset();
+      } catch (err) {
+        console.error("Error submitting testimonial:", err);
+        alert("Something went wrong. Try again!");
+      }
+    });
+  </script>
+</body>
+</html>
