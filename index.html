@@ -335,6 +335,8 @@
         backdrop-filter: blur(20px);
         z-index: 1000;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        padding-bottom: 1.5rem;
+        
       }
 
       .nav {
@@ -342,6 +344,8 @@
         align-items: center;
         justify-content: space-between;
         padding: var(--space-4) 0;
+        height: 75px;
+        margin-top: 20px;
       }
 
       .logo {
@@ -943,8 +947,9 @@
       }
 
       .social-link {
-        width: 60px;
-        height: 60px;
+        width: 40px;
+       
+        height: 40px;
         background: var(--bg-primary);
         border-radius: var(--radius-md);
         display: flex;
@@ -1130,7 +1135,7 @@
           <!-- *******************************************************************************************************************8 -->
           <div class="hero-video">
             <div class="video-container">
-              <video id="heroVideo" autoplay loop muted width="100%">
+              <video id="heroVideo" autoplay loop muted playsinline  webkit-playsinline  width="100%">
                 <source src="./video.webm" type="video/webm" />
                 Your browser does not support the video tag.
               </video>
