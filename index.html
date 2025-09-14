@@ -31,26 +31,75 @@
     </title>
     <meta
       name="description"
-      content="Transform your fashion retail with Slay.AI's AI-powered virtual try-on platform. 35% higher conversions, 25% fewer returns. Trusted by India's leading fashion brands. Book demo today."
+      content="Transform fashion retail with Slay.AI's AI-powered virtual try-on platform. 35% higher conversions, 25% fewer returns. Trusted by 100+ Indian retailers. Book demo today."
     />
     <meta
       name="keywords"
       content="AI fashion, virtual try-on, B2B retail technology, fashion tech India, retail analytics, conversion optimization, fashion AI platform"
     />
+    <!-- Favicon & Icons: -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Performance & Preload: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="//api.slayai.online" />
+
+    <!-- Lead Generation Meta: -->
+    <meta name="lead-source" content="organic-search" />
+    <meta name="conversion-goal" content="demo-booking" />
+    <meta name="target-audience" content="fashion-retail-decision-makers" />
+
+    <!-- 🛡️ SECURITY & COMPLIANCE METADATA -->
+   
+
+    <!-- Privacy & Compliance: -->
+    <meta
+      name="privacy-policy"
+      content="https://slayai.online/privacy-policy"
+    />
+    <meta
+      name="terms-of-service"
+      content="https://slayai.online/terms-of-service"
+    />
+    <meta name="gdpr-compliant" content="true" />
+    <meta name="data-retention" content="as-per-policy" />
+
+    <!-- Industry Targeting: -->
+    <meta name="industry" content="Fashion Retail Technology" />
+    <meta name="business-model" content="B2B SaaS" />
+    <meta name="target-market" content="Fashion Retailers India" />
+    <meta name="solution-type" content="Virtual Try-On Platform" />
+    <meta name="roi-guarantee" content="30x return on investment" />
+
+<!-- Lead Qualification Meta: -->
+    <meta name="min-company-size" content="5-stores">
+<meta name="ideal-customer" content="fashion-retail-chains">
+<meta name="pricing-model" content="monthly-subscription">
+<meta name="free-trial" content="14-day-pilot-program">
 
     <!-- Open Graph -->
+
     <meta
       property="og:title"
-      content="Slay.AI - AI Virtual Try-On Platform for Fashion Retailers"
+      content="Slay.AI - India's #1 Virtual Try-On Platform for Fashion Retailers"
     />
     <meta
       property="og:description"
-      content="30x ROI with AI-powered virtual try-on technology. Trusted by India's leading fashion retailers."
+      content="Boost fashion sales by 35% with AI-powered virtual try-on. Reduce returns, increase conversions. Join 100+ retailers transforming customer experience."
     />
+    <meta
+      property="og:image"
+      content="https://slayai.online/assets/og-image-slay-ai-platform.jpg"
+    />
+    <meta property="og:url" content="https://slayai.online" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://slay.ai" />
-    <meta property="og:image" content="https://slay.ai/assets/og-image.png" />
-
+    <meta property="og:site_name" content="Slay.AI Virtual Try-On Platform" />
+    <meta property="og:locale" content="en_IN" />
     <!-- Schema Markup -->
     <script type="application/ld+json">
       {
@@ -90,7 +139,22 @@
     />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="./logo.png" />
+    <link rel="icon" type="image/svg+xml" href="./slai.png" />
+    <!-- Twiterr card tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Slay.AI - Virtual Try-On Platform | 30x ROI for Fashion Retailers"
+    />
+    <meta
+      name="twitter:description"
+      content="AI-powered virtual try-on platform trusted by 100+ Indian fashion retailers. 35% conversion boost, 25% return reduction guaranteed."
+    />
+    <meta
+      name="twitter:image"
+      content="https://slayai.online/assets/twitter-card-slay-ai.jpg"
+    />
+    <meta name="twitter:site" content="@SlayAI_Official" />
 
     <style>
       /* CSS Variables - 2025 Premium Design System */
@@ -300,6 +364,15 @@
         box-shadow: var(--shadow-medium);
       }
 
+      .btn-primary-book-demo {
+        background: var(--primary-gradient);
+        color: white;
+        box-shadow: var(--shadow-medium);
+        width: 100%;
+        margin-top: 0.6rem;
+      }
+
+      .btn-primary-book-demo,
       .btn-primary:hover {
         transform: translateY(-2px);
         box-shadow: var(--shadow-strong);
@@ -929,7 +1002,7 @@
 
       /* Footer */
       .footer {
-        padding: var(--space-8) 0;
+        padding: var(--space-4) 0;
         background: var(--bg-secondary);
         border-top: 1px solid var(--bg-tertiary);
       }
@@ -980,6 +1053,15 @@
           text-align: center;
         }
 
+        .hero-cta {
+          display: flex;
+          justify-content: center;
+        }
+
+        .btn {
+          width: 100%;
+        }
+
         .hero-video {
           transform: none;
           order: -1;
@@ -987,6 +1069,10 @@
 
         .nav-links {
           display: none;
+        }
+
+        .nav {
+          height: 45px;
         }
 
         .bento-card-large {
@@ -999,7 +1085,7 @@
 
         .footer-content {
           flex-direction: column;
-          gap: var(--space-4);
+          gap: var(--space-2);
         }
 
         .hero-stats {
@@ -1008,6 +1094,12 @@
       }
 
       @media (max-width: 480px) {
+        .nav {
+          height: 45px;
+        }
+        .btn {
+          width: 100%;
+        }
         .container {
           padding: 0 var(--space-4);
         }
@@ -1089,6 +1181,8 @@
   </head>
 
   <body>
+    <a href="form.html">go</a>
+
     <!-- Header -->
     <header class="header">
       <nav class="nav container">
@@ -1413,7 +1507,6 @@
       </div>
     </section>
 
-   
     <!-- CTA Section with Contact Form -->
     <section class="cta-section" id="contact">
       <div class="container">
@@ -1480,7 +1573,7 @@
                 placeholder="Tell us about your business goals (Optional)"
               ></textarea>
             </div>
-            <button type="submit" class="btn form-submit">
+            <button type="submit" class="btn btn-primary-book-demo">
               Book Free Demo
             </button>
             <p style="font-size: 0.875rem; opacity: 0.8; margin-top: 1rem">
@@ -1547,8 +1640,7 @@
     <script type="module">
       const res = await fetch("./env.json");
       const env = await res.json();
-      
-      
+
       import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics.js";
       import {
@@ -1562,12 +1654,12 @@
       const firebaseConfig = {
         apiKey: env.apiKey,
         authDomain: env.authDomain,
-        databaseURL:env.databaseURL,
+        databaseURL: env.databaseURL,
         projectId: env.projectId,
-        storageBucket:env.storageBucket,
-        messagingSenderId:env.messagingSenderId,
-        appId:env.appId,
-        measurementId:env.measurementId,
+        storageBucket: env.storageBucket,
+        messagingSenderId: env.messagingSenderId,
+        appId: env.appId,
+        measurementId: env.measurementId,
       };
 
       // Initialize Firebase
