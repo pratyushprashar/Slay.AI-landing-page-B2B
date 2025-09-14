@@ -1413,39 +1413,7 @@
       </div>
     </section>
 
-    <!-- <script type="module">
-      import { db } from "./firebase-setup.js"; // 👈 your setup file
-      import {
-        ref,
-        onValue,
-      } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
-
-      const testimonialRef = ref(db, "testimonials");
-      const grid = document.getElementById("testimonialGrid");
-
-      onValue(testimonialRef, (snapshot) => {
-        grid.innerHTML = "";
-        const data = snapshot.val();
-        if (data) {
-          Object.values(data).forEach((t) => {
-            const card = document.createElement("div");
-            card.className = "testimonial-card animate-on-scroll";
-            card.innerHTML = `
-          <p class="testimonial-content">"${t.content}"</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">${t.avatar}</div>
-            <div class="author-info">
-              <h4>${t.name}</h4>
-              <p>${t.role}</p>
-            </div>
-          </div>
-        `;
-            grid.appendChild(card);
-          });
-        }
-      });
-    </script> -->
-
+   
     <!-- CTA Section with Contact Form -->
     <section class="cta-section" id="contact">
       <div class="container">
@@ -1577,6 +1545,10 @@
     </footer>
 
     <script type="module">
+      const res = await fetch("./env.json");
+      const env = await res.json();
+      
+      
       import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics.js";
       import {
@@ -1588,14 +1560,14 @@
       } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-database.js";
 
       const firebaseConfig = {
-        apiKey: "AIzaSyAP8nt5Em7VvJVDZ3QO0ikJP2rhNgFwKCU",
-        authDomain: "slamai-30c4a.firebaseapp.com",
-        databaseURL: "https://slamai-30c4a-default-rtdb.firebaseio.com",
-        projectId: "slamai-30c4a",
-        storageBucket: "slamai-30c4a.firebasestorage.app",
-        messagingSenderId: "499322844254",
-        appId: "1:499322844254:web:01c76c15b7c480ae4570cf",
-        measurementId: "G-9J5K9W93F9",
+        apiKey: env.apiKey,
+        authDomain: env.authDomain,
+        databaseURL:env.databaseURL,
+        projectId: env.projectId,
+        storageBucket:env.storageBucket,
+        messagingSenderId:env.messagingSenderId,
+        appId:env.appId,
+        measurementId:env.measurementId,
       };
 
       // Initialize Firebase
